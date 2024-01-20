@@ -2,6 +2,8 @@
 
 A completely vague name for a tool that responds with a random photo from a directory fed into it.
 
+Intending to be used with a **[Pico Inky Frame](https://shop.pimoroni.com/products/inky-frame-7-3)**.
+
 Usage
 
 ```bash
