@@ -1,16 +1,13 @@
 FROM python:alpine
 
-RUN pip install poetry
 RUN mkdir /images
 
 WORKDIR /app
-ADD pyproject.toml .
-ADD poetry.lock    .
+ADD requirements.txt .
 
-RUN poetry env use system
-RUN poetry install
+RUN pip install -r requirements.txt
 
 ADD main.py .
 
 EXPOSE 80
-ENTRYPOINT ["poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
