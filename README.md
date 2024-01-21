@@ -1,4 +1,4 @@
-# Picture API
+# 🖼️ Picture API
 
 A completely vague name for a tool that responds with a random photo from a directory fed into it.
 
