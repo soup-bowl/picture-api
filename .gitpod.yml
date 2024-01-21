@@ -4,4 +4,4 @@ tasks:
       sudo mkdir /images
       for i in {1..4}; do sudo curl -L https://source.unsplash.com/random -o "/images/image$i.jpg"; done
       sudo chmod -R 777 /images 
-    command: uvicorn main:app
+    command: uvicorn main:app --reload
