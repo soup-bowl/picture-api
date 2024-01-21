@@ -1,0 +1,7 @@
+tasks:
+  - init: |
+      pip install -r requirements.txt
+      sudo mkdir /images
+      for i in {1..4}; do sudo curl -L https://source.unsplash.com/random -o "/images/image$i.jpg"; done
+      sudo chmod -R 777 /images 
+    command: uvicorn main:app
