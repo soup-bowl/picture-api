@@ -2,6 +2,8 @@
 
 A completely vague name for a tool that responds with a random photo from a directory fed into it.
 
+![](https://github.com/soup-bowl/picture-api/assets/11209477/f75efe8b-6d87-41cd-8f07-da8c89f71776)
+
 Intending to be used with a **[Pico Inky Frame](https://shop.pimoroni.com/products/inky-frame-7-3)**.
 
 Usage
