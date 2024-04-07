@@ -6,7 +6,10 @@ A completely vague name for a tool that responds with a random photo from a dire
 
 Intending to be used with a **[Pico Inky Frame](https://shop.pimoroni.com/products/inky-frame-7-3)**.
 
-Usage
+> [!IMPORTANT]  
+> I have replaced the API with a NodeRed powered solution instead. 
+
+## Usage
 
 ```bash
 docker run -p <port>:80 -v "/path/to/photos:/images:ro" ghcr.io/soup-bowl/picture-api:latest
